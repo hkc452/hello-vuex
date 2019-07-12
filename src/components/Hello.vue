@@ -1,25 +1,24 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Value from Vuex count : {{ count }}</h2>
     <p>
       <button @click="update">点击同步更新Count</button>
     </p>
     <p>
-      <button @click="asyncUpdate">点击异步更新Count</button>
+      <button @click="asyncUpdate">点击异步1s后更新Count</button>
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Hello',
   props: {
     msg: String
   },
   computed: {
     count () {
-      return this.$store.state.count
+      return this.$store.state.count.index
     }
   },
   methods: {
