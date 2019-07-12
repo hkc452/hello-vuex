@@ -16,11 +16,6 @@ export default {
   props: {
     msg: String
   },
-  computed: {
-    count () {
-      return this.$store.state.count.index
-    }
-  },
   methods: {
     update() {
       this.$store.dispatch('increment')
