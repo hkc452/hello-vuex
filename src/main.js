@@ -4,9 +4,10 @@ import store from './store'
 import Vuex from './vuex'
 
 Vue.config.productionTip = false
+// 安装Vuex插件
 Vue.use(Vuex)
 
-const s = new Vuex.Store(store)
+let s = new Vuex.Store(store)
 new Vue({
   render: h => h(App),
   store:s

@@ -19,6 +19,7 @@ export default {
   methods: {
     update() {
       this.$store.dispatch('increment')
+      // this.$store.commit('increment')
     },
     asyncUpdate() {
        this.$store.dispatch('asyncInre')

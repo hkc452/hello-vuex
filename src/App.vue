@@ -8,7 +8,7 @@
 
 <script>
 import Hello from './components/Hello.vue'
-import World from './components/World'
+import World from './components/World.vue'
 
 export default {
   name: 'app',

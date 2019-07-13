@@ -4,6 +4,7 @@ export default {
         count: 0
     },
     mutations: {
+        // 改变 state.count 的值
         increment (state) {
             state.count++
         }
